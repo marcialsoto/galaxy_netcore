@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using GALAXY_NETCORE.Context;
 using GALAXY_NETCORE.Models.DTO;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 namespace GALAXY_NETCORE.Services
@@ -22,7 +23,7 @@ namespace GALAXY_NETCORE.Services
         public List<TipoArticulo> Listar()
         {
             logger.LogTrace("Llegó al método Listar");
-            var result = galaxyContext.TipoArticulos.ToList();
+            var result = galaxyContext.TipoArticulos.Include("Articulos").ToList();
 
             return result;
         }

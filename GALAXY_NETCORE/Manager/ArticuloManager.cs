@@ -24,7 +24,7 @@ namespace GALAXY_NETCORE.Manager
                                         select new BE.Articulo()
                                         {
                                             IdArticulo = item.IdArticulo,
-                                            //TipoArticulo = item.TipoArticulo.NombreTipoArticulo,
+                                            TipoArticulo = item.TipoArticulo.NombreTipoArticulo,
                                             NombreArticulo = item.NombreArticulo,
                                             Margen = item.PrecioVenta - item.Costo
                                         }

@@ -1,0 +1,251 @@
+2020-09-05 10:53:07.825 -05:00 [INF] Now listening on: https://localhost:5001
+2020-09-05 10:53:07.892 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-05 10:53:07.892 -05:00 [INF] Hosting environment: Development
+2020-09-05 10:53:07.892 -05:00 [INF] Content root path: /Users/msoto/Projects/dotnet/GALAXY_NETCORE/GALAXY_NETCORE
+2020-09-05 10:53:08.037 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/weatherforecast  
+2020-09-05 10:53:08.081 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE)'
+2020-09-05 10:53:08.158 -05:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[GALAXY_NETCORE.WeatherForecast] Get() on controller GALAXY_NETCORE.Controllers.WeatherForecastController (GALAXY_NETCORE).
+2020-09-05 10:53:08.172 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.WeatherForecast[]'.
+2020-09-05 10:53:08.214 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE) in 50.1462ms
+2020-09-05 10:53:08.218 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE)'
+2020-09-05 10:53:08.220 -05:00 [INF] Request finished in 186.1017ms 200 application/json; charset=utf-8
+2020-09-05 10:53:09.491 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/weatherforecast  
+2020-09-05 10:53:09.493 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE)'
+2020-09-05 10:53:09.494 -05:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[GALAXY_NETCORE.WeatherForecast] Get() on controller GALAXY_NETCORE.Controllers.WeatherForecastController (GALAXY_NETCORE).
+2020-09-05 10:53:09.495 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.WeatherForecast[]'.
+2020-09-05 10:53:09.496 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE) in 2.0497ms
+2020-09-05 10:53:09.496 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE)'
+2020-09-05 10:53:09.497 -05:00 [INF] Request finished in 5.9028ms 200 application/json; charset=utf-8
+2020-09-05 10:53:09.746 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico  
+2020-09-05 10:53:09.747 -05:00 [INF] Request finished in 0.6244ms 404 
+2020-09-05 10:53:21.643 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Usuario  
+2020-09-05 10:53:21.645 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.UsuarioController.Listar (GALAXY_NETCORE)'
+2020-09-05 10:53:21.651 -05:00 [INF] Route matched with {action = "Listar", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Listar() on controller GALAXY_NETCORE.Controllers.UsuarioController (GALAXY_NETCORE).
+2020-09-05 10:53:21.801 -05:00 [ERR] Llegó al método Listar de Usuario
+2020-09-05 10:53:22.259 -05:00 [WRN] No type was specified for the decimal column 'Costo' on entity type 'Articulo'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 10:53:22.259 -05:00 [WRN] No type was specified for the decimal column 'PrecioVenta' on entity type 'Articulo'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 10:53:22.290 -05:00 [INF] Entity Framework Core 3.1.7 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-05 10:53:22.652 -05:00 [INF] Executed DbCommand (205ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[Credential], [u].[FullName], [u].[Password]
+FROM [dbo].[UserApp] AS [u]
+2020-09-05 10:53:22.706 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GALAXY_NETCORE.Models.BE.Usuario, GALAXY_NETCORE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-05 10:53:22.708 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.UsuarioController.Listar (GALAXY_NETCORE) in 1056.6925ms
+2020-09-05 10:53:22.708 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.UsuarioController.Listar (GALAXY_NETCORE)'
+2020-09-05 10:53:22.711 -05:00 [INF] Request finished in 1068.6061ms 200 application/json; charset=utf-8
+2020-09-05 10:53:49.559 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/TipoArticulo  
+2020-09-05 10:53:49.561 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.TipoArticuloController.Listar (GALAXY_NETCORE)'
+2020-09-05 10:53:49.564 -05:00 [INF] Route matched with {action = "Listar", controller = "TipoArticulo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Listar() on controller GALAXY_NETCORE.Controllers.TipoArticuloController (GALAXY_NETCORE).
+2020-09-05 10:53:49.595 -05:00 [INF] Entity Framework Core 3.1.7 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-05 10:53:49.807 -05:00 [INF] Executed DbCommand (206ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[IdTipoArticulo], [t].[NombreTipoArticulo]
+FROM [dbo].[TipoArticulo] AS [t]
+2020-09-05 10:53:49.818 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GALAXY_NETCORE.Models.DTO.TipoArticulo, GALAXY_NETCORE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-05 10:53:49.823 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.TipoArticuloController.Listar (GALAXY_NETCORE) in 258.8247ms
+2020-09-05 10:53:49.823 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.TipoArticuloController.Listar (GALAXY_NETCORE)'
+2020-09-05 10:53:49.824 -05:00 [INF] Request finished in 264.4505ms 200 application/json; charset=utf-8
+2020-09-05 10:54:16.639 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Articulo  
+2020-09-05 10:54:16.639 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.ArticuloController.Listar (GALAXY_NETCORE)'
+2020-09-05 10:54:16.641 -05:00 [INF] Route matched with {action = "Listar", controller = "Articulo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Listar() on controller GALAXY_NETCORE.Controllers.ArticuloController (GALAXY_NETCORE).
+2020-09-05 10:54:16.651 -05:00 [INF] Entity Framework Core 3.1.7 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-05 10:54:16.906 -05:00 [INF] Executed DbCommand (197ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[IdArticulo], [a].[Costo], [a].[IdTipoArticulo], [a].[NombreArticulo], [a].[PrecioVenta]
+FROM [dbo].[Articulo] AS [a]
+2020-09-05 10:54:16.918 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GALAXY_NETCORE.Models.BE.Articulo, GALAXY_NETCORE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-05 10:54:16.921 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.ArticuloController.Listar (GALAXY_NETCORE) in 279.2783ms
+2020-09-05 10:54:16.921 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.ArticuloController.Listar (GALAXY_NETCORE)'
+2020-09-05 10:54:16.921 -05:00 [INF] Request finished in 283.2657ms 200 application/json; charset=utf-8
+2020-09-05 11:00:50.136 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Usuario  
+2020-09-05 11:00:50.137 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.UsuarioController.Listar (GALAXY_NETCORE)'
+2020-09-05 11:00:50.138 -05:00 [INF] Route matched with {action = "Listar", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Listar() on controller GALAXY_NETCORE.Controllers.UsuarioController (GALAXY_NETCORE).
+2020-09-05 11:00:50.139 -05:00 [ERR] Llegó al método Listar de Usuario
+2020-09-05 11:00:50.140 -05:00 [INF] Entity Framework Core 3.1.7 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-05 11:00:51.084 -05:00 [INF] Executed DbCommand (146ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[Credential], [u].[FullName], [u].[Password]
+FROM [dbo].[UserApp] AS [u]
+2020-09-05 11:00:51.085 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GALAXY_NETCORE.Models.BE.Usuario, GALAXY_NETCORE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-05 11:00:51.086 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.UsuarioController.Listar (GALAXY_NETCORE) in 948.2842ms
+2020-09-05 11:00:51.086 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.UsuarioController.Listar (GALAXY_NETCORE)'
+2020-09-05 11:00:51.087 -05:00 [INF] Request finished in 950.8552ms 200 application/json; charset=utf-8
+2020-09-05 11:02:35.480 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Usuario  
+2020-09-05 11:02:35.482 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.UsuarioController.Listar (GALAXY_NETCORE)'
+2020-09-05 11:02:35.482 -05:00 [INF] Route matched with {action = "Listar", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Listar() on controller GALAXY_NETCORE.Controllers.UsuarioController (GALAXY_NETCORE).
+2020-09-05 11:02:35.484 -05:00 [ERR] Llegó al método Listar de Usuario
+2020-09-05 11:02:35.486 -05:00 [INF] Entity Framework Core 3.1.7 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-05 11:02:35.654 -05:00 [INF] Executed DbCommand (167ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[Credential], [u].[FullName], [u].[Password]
+FROM [dbo].[UserApp] AS [u]
+2020-09-05 11:02:35.655 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GALAXY_NETCORE.Models.BE.Usuario, GALAXY_NETCORE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-05 11:02:35.656 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.UsuarioController.Listar (GALAXY_NETCORE) in 173.4407ms
+2020-09-05 11:02:35.658 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.UsuarioController.Listar (GALAXY_NETCORE)'
+2020-09-05 11:02:35.659 -05:00 [INF] Request finished in 179.2562ms 200 application/json; charset=utf-8
+2020-09-05 11:09:46.829 -05:00 [INF] Now listening on: https://localhost:5001
+2020-09-05 11:09:46.873 -05:00 [INF] Now listening on: http://localhost:5000
+2020-09-05 11:09:46.874 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-05 11:09:46.874 -05:00 [INF] Hosting environment: Development
+2020-09-05 11:09:46.875 -05:00 [INF] Content root path: /Users/msoto/Projects/dotnet/GALAXY_NETCORE/GALAXY_NETCORE
+2020-09-05 11:09:58.338 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2020-09-05 11:09:58.355 -05:00 [INF] Request finished in 17.5839ms 307 
+2020-09-05 11:09:58.426 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2020-09-05 11:09:58.454 -05:00 [INF] Request finished in 28.1985ms 404 
+2020-09-05 11:10:02.385 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2020-09-05 11:10:02.386 -05:00 [INF] Request finished in 1.2668ms 307 
+2020-09-05 11:10:02.389 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2020-09-05 11:10:02.390 -05:00 [INF] Request finished in 0.712ms 404 
+2020-09-05 11:10:09.987 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/TipoArticulo  
+2020-09-05 11:10:09.993 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.TipoArticuloController.Listar (GALAXY_NETCORE)'
+2020-09-05 11:10:10.026 -05:00 [INF] Route matched with {action = "Listar", controller = "TipoArticulo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Listar() on controller GALAXY_NETCORE.Controllers.TipoArticuloController (GALAXY_NETCORE).
+2020-09-05 11:10:10.459 -05:00 [WRN] No type was specified for the decimal column 'Costo' on entity type 'Articulo'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 11:10:10.459 -05:00 [WRN] No type was specified for the decimal column 'PrecioVenta' on entity type 'Articulo'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 11:10:10.485 -05:00 [INF] Entity Framework Core 3.1.7 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-05 11:10:10.763 -05:00 [INF] Executed DbCommand (154ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[IdTipoArticulo], [t].[NombreTipoArticulo]
+FROM [dbo].[TipoArticulo] AS [t]
+2020-09-05 11:10:10.818 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GALAXY_NETCORE.Models.DTO.TipoArticulo, GALAXY_NETCORE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-05 11:10:10.832 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.TipoArticuloController.Listar (GALAXY_NETCORE) in 801.4666ms
+2020-09-05 11:10:10.833 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.TipoArticuloController.Listar (GALAXY_NETCORE)'
+2020-09-05 11:10:10.835 -05:00 [INF] Request finished in 848.9952ms 200 application/json; charset=utf-8
+2020-09-05 11:11:34.808 -05:00 [INF] Application is shutting down...
+2020-09-05 20:01:05.873 -05:00 [INF] Now listening on: https://localhost:5001
+2020-09-05 20:01:05.977 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-05 20:01:05.977 -05:00 [INF] Hosting environment: Development
+2020-09-05 20:01:05.977 -05:00 [INF] Content root path: /Users/msoto/Projects/dotnet/GALAXY_NETCORE/GALAXY_NETCORE
+2020-09-05 20:01:06.057 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/weatherforecast  
+2020-09-05 20:01:06.121 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE)'
+2020-09-05 20:01:06.223 -05:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[GALAXY_NETCORE.WeatherForecast] Get() on controller GALAXY_NETCORE.Controllers.WeatherForecastController (GALAXY_NETCORE).
+2020-09-05 20:01:06.231 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.WeatherForecast[]'.
+2020-09-05 20:01:06.286 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE) in 54.9379ms
+2020-09-05 20:01:06.289 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE)'
+2020-09-05 20:01:06.291 -05:00 [INF] Request finished in 239.4599ms 200 application/json; charset=utf-8
+2020-09-05 20:01:07.458 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/weatherforecast  
+2020-09-05 20:01:07.461 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE)'
+2020-09-05 20:01:07.461 -05:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[GALAXY_NETCORE.WeatherForecast] Get() on controller GALAXY_NETCORE.Controllers.WeatherForecastController (GALAXY_NETCORE).
+2020-09-05 20:01:07.463 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.WeatherForecast[]'.
+2020-09-05 20:01:07.464 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE) in 2.5494ms
+2020-09-05 20:01:07.464 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE)'
+2020-09-05 20:01:07.465 -05:00 [INF] Request finished in 6.8798ms 200 application/json; charset=utf-8
+2020-09-05 20:01:23.014 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Articulo  
+2020-09-05 20:01:23.015 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.ArticuloController.Listar (GALAXY_NETCORE)'
+2020-09-05 20:01:23.018 -05:00 [INF] Route matched with {action = "Listar", controller = "Articulo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Listar() on controller GALAXY_NETCORE.Controllers.ArticuloController (GALAXY_NETCORE).
+2020-09-05 20:01:23.711 -05:00 [WRN] No type was specified for the decimal column 'Costo' on entity type 'Articulo'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 20:01:23.711 -05:00 [WRN] No type was specified for the decimal column 'PrecioVenta' on entity type 'Articulo'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 20:01:23.743 -05:00 [INF] Entity Framework Core 3.1.7 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-05 20:01:24.133 -05:00 [INF] Executed DbCommand (201ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[IdArticulo], [a].[Costo], [a].[IdTipoArticulo], [a].[NombreArticulo], [a].[PrecioVenta]
+FROM [dbo].[Articulo] AS [a]
+2020-09-05 20:01:24.201 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GALAXY_NETCORE.Models.BE.Articulo, GALAXY_NETCORE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-05 20:01:24.207 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.ArticuloController.Listar (GALAXY_NETCORE) in 1188.8293ms
+2020-09-05 20:01:24.207 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.ArticuloController.Listar (GALAXY_NETCORE)'
+2020-09-05 20:01:24.210 -05:00 [INF] Request finished in 1195.8959ms 200 application/json; charset=utf-8
+2020-09-05 20:04:39.758 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Articulo  
+2020-09-05 20:04:39.760 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.ArticuloController.Listar (GALAXY_NETCORE)'
+2020-09-05 20:04:39.761 -05:00 [INF] Route matched with {action = "Listar", controller = "Articulo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Listar() on controller GALAXY_NETCORE.Controllers.ArticuloController (GALAXY_NETCORE).
+2020-09-05 20:04:39.821 -05:00 [INF] Entity Framework Core 3.1.7 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-05 20:04:40.339 -05:00 [INF] Executed DbCommand (516ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[IdArticulo], [a].[Costo], [a].[IdTipoArticulo], [a].[NombreArticulo], [a].[PrecioVenta]
+FROM [dbo].[Articulo] AS [a]
+2020-09-05 20:04:40.342 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GALAXY_NETCORE.Models.BE.Articulo, GALAXY_NETCORE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-05 20:04:40.343 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.ArticuloController.Listar (GALAXY_NETCORE) in 581.5461ms
+2020-09-05 20:04:40.344 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.ArticuloController.Listar (GALAXY_NETCORE)'
+2020-09-05 20:04:40.345 -05:00 [INF] Request finished in 587.1808ms 200 application/json; charset=utf-8
+2020-09-05 20:05:04.880 -05:00 [INF] Now listening on: https://localhost:5001
+2020-09-05 20:05:04.970 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-05 20:05:04.970 -05:00 [INF] Hosting environment: Development
+2020-09-05 20:05:04.970 -05:00 [INF] Content root path: /Users/msoto/Projects/dotnet/GALAXY_NETCORE/GALAXY_NETCORE
+2020-09-05 20:05:05.046 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/weatherforecast  
+2020-09-05 20:05:05.106 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE)'
+2020-09-05 20:05:05.181 -05:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[GALAXY_NETCORE.WeatherForecast] Get() on controller GALAXY_NETCORE.Controllers.WeatherForecastController (GALAXY_NETCORE).
+2020-09-05 20:05:05.187 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.WeatherForecast[]'.
+2020-09-05 20:05:05.231 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE) in 42.7009ms
+2020-09-05 20:05:05.238 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE)'
+2020-09-05 20:05:05.242 -05:00 [INF] Request finished in 206.7748ms 200 application/json; charset=utf-8
+2020-09-05 20:05:06.362 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/weatherforecast  
+2020-09-05 20:05:06.435 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE)'
+2020-09-05 20:05:06.436 -05:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[GALAXY_NETCORE.WeatherForecast] Get() on controller GALAXY_NETCORE.Controllers.WeatherForecastController (GALAXY_NETCORE).
+2020-09-05 20:05:06.437 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.WeatherForecast[]'.
+2020-09-05 20:05:06.438 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE) in 1.7814ms
+2020-09-05 20:05:06.438 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE)'
+2020-09-05 20:05:06.438 -05:00 [INF] Request finished in 76.5579ms 200 application/json; charset=utf-8
+2020-09-05 20:05:10.087 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Articulo  
+2020-09-05 20:05:10.088 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.ArticuloController.Listar (GALAXY_NETCORE)'
+2020-09-05 20:05:10.091 -05:00 [INF] Route matched with {action = "Listar", controller = "Articulo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Listar() on controller GALAXY_NETCORE.Controllers.ArticuloController (GALAXY_NETCORE).
+2020-09-05 20:05:10.752 -05:00 [WRN] No type was specified for the decimal column 'Costo' on entity type 'Articulo'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 20:05:10.752 -05:00 [WRN] No type was specified for the decimal column 'PrecioVenta' on entity type 'Articulo'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 20:05:10.786 -05:00 [INF] Entity Framework Core 3.1.7 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-05 20:05:13.345 -05:00 [INF] Executed DbCommand (371ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[IdArticulo], [a].[Costo], [a].[IdTipoArticulo], [a].[NombreArticulo], [a].[PrecioVenta]
+FROM [dbo].[Articulo] AS [a]
+2020-09-05 20:07:41.377 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.ArticuloController.Listar (GALAXY_NETCORE) in 151262.8697ms
+2020-09-05 20:07:41.379 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.ArticuloController.Listar (GALAXY_NETCORE)'
+2020-09-05 20:07:41.384 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at GALAXY_NETCORE.Manager.ArticuloManager.<>c.<Listar>b__2_0(Articulo item) in /Users/msoto/Projects/dotnet/GALAXY_NETCORE/GALAXY_NETCORE/Manager/ArticuloManager.cs:line 24
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at GALAXY_NETCORE.Manager.ArticuloManager.Listar() in /Users/msoto/Projects/dotnet/GALAXY_NETCORE/GALAXY_NETCORE/Manager/ArticuloManager.cs:line 23
+   at GALAXY_NETCORE.Controllers.ArticuloController.Listar() in /Users/msoto/Projects/dotnet/GALAXY_NETCORE/GALAXY_NETCORE/Controllers/ArticuloController.cs:line 24
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-05 20:07:41.404 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/TipoArticulo  
+2020-09-05 20:07:41.405 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.TipoArticuloController.Listar (GALAXY_NETCORE)'
+2020-09-05 20:07:41.407 -05:00 [INF] Route matched with {action = "Listar", controller = "TipoArticulo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Listar() on controller GALAXY_NETCORE.Controllers.TipoArticuloController (GALAXY_NETCORE).
+2020-09-05 20:07:41.435 -05:00 [INF] Request finished in 151348.8148ms 500 text/html; charset=utf-8
+2020-09-05 20:07:41.438 -05:00 [INF] Entity Framework Core 3.1.7 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-05 20:07:41.938 -05:00 [INF] Executed DbCommand (493ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[IdTipoArticulo], [t].[NombreTipoArticulo]
+FROM [dbo].[TipoArticulo] AS [t]
+2020-09-05 20:07:41.966 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GALAXY_NETCORE.Models.DTO.TipoArticulo, GALAXY_NETCORE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-05 20:07:41.976 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.TipoArticuloController.Listar (GALAXY_NETCORE) in 568.393ms
+2020-09-05 20:07:41.976 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.TipoArticuloController.Listar (GALAXY_NETCORE)'
+2020-09-05 20:07:41.978 -05:00 [INF] Request finished in 573.6718ms 200 application/json; charset=utf-8
+2020-09-05 20:13:19.580 -05:00 [INF] Now listening on: https://localhost:5001
+2020-09-05 20:13:19.668 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-05 20:13:19.669 -05:00 [INF] Hosting environment: Development
+2020-09-05 20:13:19.670 -05:00 [INF] Content root path: /Users/msoto/Projects/dotnet/GALAXY_NETCORE/GALAXY_NETCORE
+2020-09-05 20:13:19.789 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/weatherforecast  
+2020-09-05 20:13:19.864 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE)'
+2020-09-05 20:13:19.928 -05:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[GALAXY_NETCORE.WeatherForecast] Get() on controller GALAXY_NETCORE.Controllers.WeatherForecastController (GALAXY_NETCORE).
+2020-09-05 20:13:19.936 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.WeatherForecast[]'.
+2020-09-05 20:13:19.978 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE) in 43.8042ms
+2020-09-05 20:13:19.984 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE)'
+2020-09-05 20:13:19.986 -05:00 [INF] Request finished in 202.199ms 200 application/json; charset=utf-8
+2020-09-05 20:13:21.205 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/weatherforecast  
+2020-09-05 20:13:21.206 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE)'
+2020-09-05 20:13:21.207 -05:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[GALAXY_NETCORE.WeatherForecast] Get() on controller GALAXY_NETCORE.Controllers.WeatherForecastController (GALAXY_NETCORE).
+2020-09-05 20:13:21.209 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.WeatherForecast[]'.
+2020-09-05 20:13:21.209 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE) in 1.9433ms
+2020-09-05 20:13:21.210 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.WeatherForecastController.Get (GALAXY_NETCORE)'
+2020-09-05 20:13:21.210 -05:00 [INF] Request finished in 5.322ms 200 application/json; charset=utf-8
+2020-09-05 20:13:25.597 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/TipoArticulo  
+2020-09-05 20:13:25.598 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.TipoArticuloController.Listar (GALAXY_NETCORE)'
+2020-09-05 20:13:25.600 -05:00 [INF] Route matched with {action = "Listar", controller = "TipoArticulo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Listar() on controller GALAXY_NETCORE.Controllers.TipoArticuloController (GALAXY_NETCORE).
+2020-09-05 20:13:26.288 -05:00 [WRN] No type was specified for the decimal column 'Costo' on entity type 'Articulo'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 20:13:26.289 -05:00 [WRN] No type was specified for the decimal column 'PrecioVenta' on entity type 'Articulo'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-09-05 20:13:26.325 -05:00 [INF] Entity Framework Core 3.1.7 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-05 20:13:29.940 -05:00 [INF] Executed DbCommand (994ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[IdTipoArticulo], [t].[NombreTipoArticulo]
+FROM [dbo].[TipoArticulo] AS [t]
+2020-09-05 20:13:30.008 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[GALAXY_NETCORE.Models.DTO.TipoArticulo, GALAXY_NETCORE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-05 20:13:30.013 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.TipoArticuloController.Listar (GALAXY_NETCORE) in 4412.721ms
+2020-09-05 20:13:30.014 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.TipoArticuloController.Listar (GALAXY_NETCORE)'
+2020-09-05 20:13:30.017 -05:00 [INF] Request finished in 4420.2174ms 200 application/json; charset=utf-8
+2020-09-05 20:13:36.492 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Articulo  
+2020-09-05 20:13:36.495 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.ArticuloController.Listar (GALAXY_NETCORE)'
+2020-09-05 20:13:36.500 -05:00 [INF] Route matched with {action = "Listar", controller = "Articulo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Listar() on controller GALAXY_NETCORE.Controllers.ArticuloController (GALAXY_NETCORE).
+2020-09-05 20:13:36.535 -05:00 [INF] Entity Framework Core 3.1.7 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-05 20:13:36.965 -05:00 [INF] Executed DbCommand (421ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[IdArticulo], [a].[Costo], [a].[IdTipoArticulo], [a].[NombreArticulo], [a].[PrecioVenta]
+FROM [dbo].[Articulo] AS [a]

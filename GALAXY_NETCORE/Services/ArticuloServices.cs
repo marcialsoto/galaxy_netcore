@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using GALAXY_NETCORE.Context;
 using GALAXY_NETCORE.Models.DTO;
+using Microsoft.EntityFrameworkCore;
 
 namespace GALAXY_NETCORE.Services
 {
@@ -18,7 +19,7 @@ namespace GALAXY_NETCORE.Services
 
         public List<Articulo> Listar()
         {
-            var result = galaxyContext.Articulos.ToList();
+            var result = galaxyContext.Articulos.Include("TipoArticulo").ToList();
 
             return result;
         }
