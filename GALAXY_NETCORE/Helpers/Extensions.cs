@@ -24,6 +24,9 @@ namespace GALAXY_NETCORE.Helpers
             services.AddTransient<IArticuloServices, ArticuloServices>();
             services.AddTransient<IArticuloManager, ArticuloManager>();
 
+            services.AddTransient<IOpcionServices, OpcionServices>();
+            services.AddTransient<IOpcionManager, OpcionManager>();
+
         }
 
         public static void GestionExcepciones(this IApplicationBuilder app, ILogger<Startup> logger)

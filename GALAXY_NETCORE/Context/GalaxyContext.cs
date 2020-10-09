@@ -19,6 +19,7 @@ namespace GALAXY_NETCORE.Context
             modelBuilder.ApplyConfiguration(new TipoArticuloConfiguration());
             modelBuilder.ApplyConfiguration(new ArticuloConfiguration());
             modelBuilder.ApplyConfiguration(new UserAppConfiguration());
+            modelBuilder.ApplyConfiguration(new OpcionConfiguration());
 
             #endregion
 
@@ -29,5 +30,6 @@ namespace GALAXY_NETCORE.Context
         public DbSet<TipoArticulo> TipoArticulos { get; set; }
         public DbSet<Articulo> Articulos { get; set; }
         public DbSet<UserApp> UserApps { get; set; }
+        public DbSet<Opcion> Opciones { get; set; }
     }
 }
