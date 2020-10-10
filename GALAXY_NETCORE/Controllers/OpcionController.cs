@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using GALAXY_NETCORE.Manager;
 using GALAXY_NETCORE.Models.BE;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GALAXY_NETCORE.Controllers
@@ -18,6 +19,7 @@ namespace GALAXY_NETCORE.Controllers
         }
 
         [HttpGet]
+        //[EnableCors("PublicApi")]
         public async Task<IActionResult> Listar(int NroPag, int RegPorPag, string filtro = "")
         {
             var res = await opcionManager.Listar(new Models.DTO.Paginacion { NroPag = NroPag, RegPorPag = RegPorPag, Filtro = filtro });

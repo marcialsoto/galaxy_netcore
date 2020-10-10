@@ -19,6 +19,8 @@ namespace GALAXY_NETCORE
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -36,6 +38,16 @@ namespace GALAXY_NETCORE
             services.InyectaDependencias();
 
             services.Configure<ConnectionStringsConfig>(Configuration.GetSection("ConnectionStrings"));
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                                  builder =>
+                                  {
+                                      builder.WithOrigins("http://localhost:4200",
+                                                          "http://localhost").AllowAnyMethod().AllowAnyHeader();
+                                  });
+            });
 
             services.AddControllers();
 
@@ -60,12 +72,20 @@ namespace GALAXY_NETCORE
 
             app.UseRouting();
 
+            app.UseCors(MyAllowSpecificOrigins);
+
+            //app.UseCors("PublicApi");
+            //app.UseCors(
+            //    options => options.WithOrigins("http://localhost:4200/").AllowAnyMethod()
+            //);
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+
         }
     }
 }
