@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { OpcionService } from '../app/services/opcion.service';
 import { OpcionModel } from './models/opcion.model';
 import { PaginacionModel } from './models/paginacion.model';
-import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import {MatDialog, MatDialogConfig, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { ModalComponent } from '../app/components/modal/modal.component';
 
 @Component({
@@ -32,15 +32,51 @@ export class AppComponent implements OnInit {
   cargarOpciones(paginacion: PaginacionModel) {
     this.opcionService.cargarOpciones(paginacion)
       .subscribe( (res: any) => {
-        console.log(res);
+        // console.log(res);
         this.pag.NroRegTotal = res.totalReg;
         this.opciones = res.opciones;
       });
   }
 
   editar(element: OpcionModel) {
-    this.dialog.open(ModalComponent, {
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.disableClose = true;
+    dialogConfig.autoFocus = true;
+
+    const dialogRef = this.dialog.open(ModalComponent, {
       data: element
+    });
+
+    dialogRef.afterClosed().subscribe(() => {
+      this.cargarOpciones(this.pag);
+    });
+  }
+
+  agregar() {
+    const opcionEmpty: OpcionModel = {
+      codigo: 0,
+      nombre: '',
+      enlace: '',
+      icono: ''
+    };
+
+    const dialogRef = this.dialog.open(ModalComponent, {
+      data: opcionEmpty
+    });
+
+    dialogRef.afterClosed().subscribe(() => {
+      this.cargarOpciones(this.pag);
+    });
+
+    console.log(opcionEmpty);
+  }
+
+
+  eliminar(element: OpcionModel) {
+    this.opcionService.eliminarOpcion(element)
+    .subscribe((msg) => {
+      console.log(msg);
+      this.cargarOpciones(this.pag);
     });
   }
 }

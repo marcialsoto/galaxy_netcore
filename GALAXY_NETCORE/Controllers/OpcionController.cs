@@ -38,5 +38,30 @@ namespace GALAXY_NETCORE.Controllers
 
         }
 
+        [HttpPost]
+        public IActionResult Agregar([FromBody] OpcionBE a)
+        {
+            if (string.IsNullOrEmpty(a.Nombre))
+            {
+                return BadRequest("Debe enviar el nombre");
+            }
+            opcionManager.Agregar(a);
+            return Ok(a);
+
+        }
+
+        [HttpDelete]
+        public IActionResult Eliminar(int id)
+        {
+            var result = opcionManager.Eliminar(new OpcionBE() { Codigo = id });
+
+            if (result == null)
+            {
+                return BadRequest("No existe");
+            }
+
+            return Ok(result);
+
+        }
     }
 }

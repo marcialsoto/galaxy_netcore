@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using GALAXY_NETCORE.Config;
 using GALAXY_NETCORE.Context;
 using GALAXY_NETCORE.Helpers;
@@ -48,6 +49,8 @@ namespace GALAXY_NETCORE
                                                           "http://localhost").AllowAnyMethod().AllowAnyHeader();
                                   });
             });
+
+            services.AddAutoMapper(typeof(Startup));
 
             services.AddControllers();
 

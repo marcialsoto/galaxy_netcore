@@ -10,5 +10,9 @@ namespace GALAXY_NETCORE.Services
         Task<List<Opcion>> Listar(Paginacion ent);
 
         Opcion Actualizar(Opcion ent);
+
+        Opcion Agregar(Opcion ent);
+
+        Opcion Eliminar(Opcion ent);
     }
 }

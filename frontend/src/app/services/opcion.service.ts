@@ -31,12 +31,20 @@ export class OpcionService {
         `${environment.api}/Opcion`,
         opcion
       );
-      // .pipe(
-      //   map((res: any) => {
-      //     this.message.create('success', 'Hospital actualizado con éxito');
+  }
 
-      //     return res.hospital;
-      //   })
-      // );
+  agregarOpcion(opcion: OpcionModel): Observable<any> {
+    return this.http
+      .post(
+        `${environment.api}/Opcion`,
+        opcion
+      );
+  }
+  
+  eliminarOpcion(opcion: OpcionModel): Observable<any> {
+    return this.http
+      .delete(
+        `${environment.api}/Opcion/?id=${opcion.codigo}`
+      );
   }
 }

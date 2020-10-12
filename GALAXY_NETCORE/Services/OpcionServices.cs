@@ -25,7 +25,29 @@ namespace GALAXY_NETCORE.Services
             entidad.NombreIcono = ent.NombreIcono;
 
             galaxyContext.SaveChanges();
+
             return ent;
+        }
+
+        public Opcion Agregar(Opcion ent)
+        {
+            galaxyContext.Opciones.Add(ent);
+            galaxyContext.SaveChanges();
+
+            return ent;
+        }
+
+        public Opcion Eliminar(Opcion ent)
+        {
+            var entidad = galaxyContext.Opciones.Find(ent.IdOpcion);
+
+            if (entidad != null)
+            {
+                galaxyContext.Opciones.Remove(entidad);
+                galaxyContext.SaveChanges();
+            }
+
+            return entidad;
         }
 
         public async Task<List<Opcion>> Listar(Paginacion ent)

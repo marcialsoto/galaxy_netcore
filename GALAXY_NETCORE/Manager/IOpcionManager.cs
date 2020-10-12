@@ -10,5 +10,7 @@ namespace GALAXY_NETCORE.Manager
     {
         Task<OpcionListar> Listar(Paginacion ent);
         OpcionBE Actualizar(OpcionBE ent);
+        OpcionBE Agregar(OpcionBE ent);
+        OpcionBE Eliminar(OpcionBE ent);
     }
 }

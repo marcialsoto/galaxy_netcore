@@ -21,16 +21,22 @@ export class ModalComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  actualizar(actualizarForm: NgForm) {
-    if (actualizarForm.invalid) {
+  agregarOactualizar(opcionForm: NgForm) {
+    if (opcionForm.invalid) {
       return;
     }
 
-    this.opcionService.actualizarOpcion(actualizarForm.value)
-      .subscribe(msg => {
-        console.log(msg);
-        this.modalRef.closeAll();
-      });
+    if (opcionForm.value.codigo == 0) {
+      this.opcionService.agregarOpcion(opcionForm.value)
+        .subscribe(() => {
+          this.modalRef.closeAll();
+        });
+    } else {
+      this.opcionService.actualizarOpcion(opcionForm.value)
+        .subscribe(() => {
+          this.modalRef.closeAll();
+        });
+    }
   }
 
 }
