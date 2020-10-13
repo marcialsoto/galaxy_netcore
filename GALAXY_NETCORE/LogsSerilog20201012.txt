@@ -4193,3 +4193,881 @@ OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
 2020-10-12 21:35:18.478 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 385.8163ms
 2020-10-12 21:35:18.478 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
 2020-10-12 21:35:18.478 -05:00 [INF] Request finished in 386.254ms 200 application/json; charset=utf-8
+2020-10-12 22:08:19.375 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=6  
+2020-10-12 22:08:19.375 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:08:19.375 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:08:19.375 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:08:19.375 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:08:21.155 -05:00 [INF] Executed DbCommand (215ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:08:21.330 -05:00 [INF] Executed DbCommand (175ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:08:21.330 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:08:21.331 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 1955.6164ms
+2020-10-12 22:08:21.331 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:08:21.331 -05:00 [INF] Request finished in 1956.1987ms 200 application/json; charset=utf-8
+2020-10-12 22:08:22.184 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=6  
+2020-10-12 22:08:22.185 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:08:22.185 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:08:22.185 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:08:22.185 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:08:23.345 -05:00 [INF] Executed DbCommand (174ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:08:23.511 -05:00 [INF] Executed DbCommand (166ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:08:23.512 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:08:23.512 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 1327.0236ms
+2020-10-12 22:08:23.512 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:08:23.512 -05:00 [INF] Request finished in 1328.1077ms 200 application/json; charset=utf-8
+2020-10-12 22:09:01.997 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:09:01.997 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:09:01.998 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:09:01.998 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:09:01.998 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:09:02.562 -05:00 [INF] Executed DbCommand (564ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:09:02.786 -05:00 [INF] Executed DbCommand (223ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:09:02.810 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:09:02.810 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 812.7097ms
+2020-10-12 22:09:02.810 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:09:02.811 -05:00 [INF] Request finished in 813.1307ms 200 application/json; charset=utf-8
+2020-10-12 22:10:28.114 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:10:28.140 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:10:28.140 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:10:28.140 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:10:28.140 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:10:28.347 -05:00 [INF] Executed DbCommand (203ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:10:28.563 -05:00 [INF] Executed DbCommand (216ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:10:28.570 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:10:28.570 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 429.9183ms
+2020-10-12 22:10:28.570 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:10:28.570 -05:00 [INF] Request finished in 455.7614ms 200 application/json; charset=utf-8
+2020-10-12 22:12:37.162 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:12:37.163 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:12:37.163 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:12:37.163 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:12:37.164 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:12:37.327 -05:00 [INF] Executed DbCommand (163ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:12:37.512 -05:00 [INF] Executed DbCommand (179ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:12:37.512 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:12:37.512 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 348.8759ms
+2020-10-12 22:12:37.512 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:12:37.512 -05:00 [INF] Request finished in 375.78ms 200 application/json; charset=utf-8
+2020-10-12 22:12:37.514 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:12:37.514 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:12:37.514 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:12:37.514 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:12:37.515 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:12:37.683 -05:00 [INF] Executed DbCommand (168ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:12:37.849 -05:00 [INF] Executed DbCommand (166ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:12:37.849 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:12:37.849 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 334.7304ms
+2020-10-12 22:12:37.849 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:12:37.849 -05:00 [INF] Request finished in 335.1804ms 200 application/json; charset=utf-8
+2020-10-12 22:14:12.182 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:14:12.204 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:14:12.204 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:14:12.204 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:14:12.204 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:14:12.406 -05:00 [INF] Executed DbCommand (174ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:14:12.669 -05:00 [INF] Executed DbCommand (263ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:14:12.669 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:14:12.669 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 465.5987ms
+2020-10-12 22:14:12.670 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:14:12.670 -05:00 [INF] Request finished in 512.1163ms 200 application/json; charset=utf-8
+2020-10-12 22:14:12.672 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:14:12.673 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:14:12.673 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:14:12.673 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:14:12.673 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:14:12.901 -05:00 [INF] Executed DbCommand (227ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:14:13.080 -05:00 [INF] Executed DbCommand (179ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:14:13.080 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:14:13.081 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 407.7168ms
+2020-10-12 22:14:13.081 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:14:13.081 -05:00 [INF] Request finished in 408.278ms 200 application/json; charset=utf-8
+2020-10-12 22:14:31.247 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:14:31.247 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:14:31.247 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:14:31.247 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:14:31.247 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:14:31.617 -05:00 [INF] Executed DbCommand (370ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:14:31.837 -05:00 [INF] Executed DbCommand (220ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:14:31.838 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:14:31.838 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 590.8594ms
+2020-10-12 22:14:31.838 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:14:31.838 -05:00 [INF] Request finished in 591.4024ms 200 application/json; charset=utf-8
+2020-10-12 22:14:31.840 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:14:31.840 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:14:31.840 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:14:31.840 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:14:31.841 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:14:32.102 -05:00 [INF] Executed DbCommand (261ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:14:32.294 -05:00 [INF] Executed DbCommand (191ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:14:32.294 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:14:32.294 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 453.6181ms
+2020-10-12 22:14:32.294 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:14:32.294 -05:00 [INF] Request finished in 454.3117ms 200 application/json; charset=utf-8
+2020-10-12 22:26:29.022 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:26:29.022 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:26:29.022 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:26:29.022 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:26:29.022 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:26:30.332 -05:00 [INF] Executed DbCommand (207ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:26:30.517 -05:00 [INF] Executed DbCommand (184ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:26:30.517 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:26:30.517 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 1495.1198ms
+2020-10-12 22:26:30.517 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:26:30.517 -05:00 [INF] Request finished in 1495.7092ms 200 application/json; charset=utf-8
+2020-10-12 22:26:30.518 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:26:30.519 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:26:30.519 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:26:30.519 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:26:30.519 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:26:30.695 -05:00 [INF] Executed DbCommand (176ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:26:30.888 -05:00 [INF] Executed DbCommand (192ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:26:30.888 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:26:30.888 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 369.4005ms
+2020-10-12 22:26:30.888 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:26:30.888 -05:00 [INF] Request finished in 369.9283ms 200 application/json; charset=utf-8
+2020-10-12 22:26:49.781 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:26:49.781 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:26:49.781 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:26:49.781 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:26:49.782 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:26:50.096 -05:00 [INF] Executed DbCommand (314ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:26:50.285 -05:00 [INF] Executed DbCommand (188ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:26:50.285 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:26:50.286 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 504.5527ms
+2020-10-12 22:26:50.286 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:26:50.286 -05:00 [INF] Request finished in 505.2779ms 200 application/json; charset=utf-8
+2020-10-12 22:26:50.288 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:26:50.288 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:26:50.288 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:26:50.288 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:26:50.289 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:26:50.505 -05:00 [INF] Executed DbCommand (217ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:26:50.700 -05:00 [INF] Executed DbCommand (195ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:26:50.701 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:26:50.701 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 412.6203ms
+2020-10-12 22:26:50.701 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:26:50.701 -05:00 [INF] Request finished in 413.5121ms 200 application/json; charset=utf-8
+2020-10-12 22:28:10.102 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:28:10.102 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:28:10.102 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:28:10.102 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:28:10.103 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:28:10.774 -05:00 [INF] Executed DbCommand (670ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:28:11.295 -05:00 [INF] Executed DbCommand (521ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:28:11.298 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:28:11.298 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 1195.4549ms
+2020-10-12 22:28:11.298 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:28:11.298 -05:00 [INF] Request finished in 1221.9864ms 200 application/json; charset=utf-8
+2020-10-12 22:28:11.317 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:28:11.317 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:28:11.317 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:28:11.317 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:28:11.317 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:28:11.692 -05:00 [INF] Executed DbCommand (348ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:28:12.008 -05:00 [INF] Executed DbCommand (316ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:28:12.009 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:28:12.009 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 691.8682ms
+2020-10-12 22:28:12.009 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:28:12.009 -05:00 [INF] Request finished in 692.4702ms 200 application/json; charset=utf-8
+2020-10-12 22:28:20.454 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=6  
+2020-10-12 22:28:20.454 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:28:20.454 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:28:20.454 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:28:20.454 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:28:20.686 -05:00 [INF] Executed DbCommand (231ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:28:20.892 -05:00 [INF] Executed DbCommand (206ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:28:20.893 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:28:20.893 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 438.5487ms
+2020-10-12 22:28:20.893 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:28:20.893 -05:00 [INF] Request finished in 438.9824ms 200 application/json; charset=utf-8
+2020-10-12 22:28:25.700 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=6  
+2020-10-12 22:28:25.700 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:28:25.700 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:28:25.700 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:28:25.700 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:28:25.939 -05:00 [INF] Executed DbCommand (239ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:28:26.156 -05:00 [INF] Executed DbCommand (216ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:28:26.157 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:28:26.157 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 457.0883ms
+2020-10-12 22:28:26.157 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:28:26.157 -05:00 [INF] Request finished in 457.6712ms 200 application/json; charset=utf-8
+2020-10-12 22:29:51.120 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:29:51.120 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:29:51.120 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:29:51.120 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:29:51.120 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:29:51.301 -05:00 [INF] Executed DbCommand (180ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:29:51.475 -05:00 [INF] Executed DbCommand (173ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:29:51.476 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:29:51.476 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 355.7159ms
+2020-10-12 22:29:51.476 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:29:51.476 -05:00 [INF] Request finished in 356.318ms 200 application/json; charset=utf-8
+2020-10-12 22:29:51.548 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:29:51.548 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:29:51.548 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:29:51.548 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:29:51.548 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:29:51.720 -05:00 [INF] Executed DbCommand (171ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:29:51.896 -05:00 [INF] Executed DbCommand (176ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:29:51.896 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:29:51.897 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 348.7459ms
+2020-10-12 22:29:51.897 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:29:51.897 -05:00 [INF] Request finished in 349.1788ms 200 application/json; charset=utf-8
+2020-10-12 22:31:20.214 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:31:20.214 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:31:20.215 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:31:20.215 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:31:20.215 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:31:20.390 -05:00 [INF] Executed DbCommand (175ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:31:20.566 -05:00 [INF] Executed DbCommand (176ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:31:20.566 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:31:20.567 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 351.8408ms
+2020-10-12 22:31:20.567 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:31:20.567 -05:00 [INF] Request finished in 399.7696ms 200 application/json; charset=utf-8
+2020-10-12 22:31:20.568 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:31:20.568 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:31:20.568 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:31:20.568 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:31:20.568 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:31:20.743 -05:00 [INF] Executed DbCommand (174ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:31:20.915 -05:00 [INF] Executed DbCommand (171ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:31:20.915 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:31:20.915 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 346.9268ms
+2020-10-12 22:31:20.915 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:31:20.915 -05:00 [INF] Request finished in 347.3385ms 200 application/json; charset=utf-8
+2020-10-12 22:31:37.154 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:31:37.154 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:31:37.154 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:31:37.154 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:31:37.155 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:31:37.378 -05:00 [INF] Executed DbCommand (223ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:31:37.563 -05:00 [INF] Executed DbCommand (185ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:31:37.563 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:31:37.564 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 409.2295ms
+2020-10-12 22:31:37.564 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:31:37.564 -05:00 [INF] Request finished in 409.8154ms 200 application/json; charset=utf-8
+2020-10-12 22:31:37.565 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:31:37.565 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:31:37.565 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:31:37.565 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:31:37.566 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:31:37.747 -05:00 [INF] Executed DbCommand (181ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:31:37.959 -05:00 [INF] Executed DbCommand (212ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:31:37.960 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:31:37.960 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 394.5806ms
+2020-10-12 22:31:37.960 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:31:37.960 -05:00 [INF] Request finished in 395.039ms 200 application/json; charset=utf-8
+2020-10-12 22:32:51.137 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:32:51.143 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:32:51.143 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:32:51.143 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:32:51.144 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:32:51.317 -05:00 [INF] Executed DbCommand (173ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:32:51.491 -05:00 [INF] Executed DbCommand (169ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:32:51.491 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:32:51.491 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 347.7364ms
+2020-10-12 22:32:51.491 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:32:51.491 -05:00 [INF] Request finished in 354.2985ms 200 application/json; charset=utf-8
+2020-10-12 22:32:52.195 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:32:52.196 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:32:52.196 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:32:52.196 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:32:52.196 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:32:52.367 -05:00 [INF] Executed DbCommand (171ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:32:52.557 -05:00 [INF] Executed DbCommand (190ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:32:52.557 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:32:52.558 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 361.9637ms
+2020-10-12 22:32:52.558 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:32:52.558 -05:00 [INF] Request finished in 362.3427ms 200 application/json; charset=utf-8
+2020-10-12 22:33:02.115 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:5001/api/Opcion  
+2020-10-12 22:33:02.115 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:33:02.115 -05:00 [INF] Request finished in 0.2564ms 204 
+2020-10-12 22:33:02.116 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/Opcion application/json 80
+2020-10-12 22:33:02.116 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:33:02.116 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Agregar (GALAXY_NETCORE)'
+2020-10-12 22:33:02.116 -05:00 [INF] Route matched with {action = "Agregar", controller = "Opcion"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Agregar(GALAXY_NETCORE.Models.BE.OpcionBE) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:33:02.117 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:33:03.304 -05:00 [INF] Executed DbCommand (170ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[opcion] ([NombreIcono], [NombreOpcion], [UrlOpcion])
+VALUES (@p0, @p1, @p2);
+SELECT [IdOpcion]
+FROM [dbo].[opcion]
+WHERE @@ROWCOUNT = 1 AND [IdOpcion] = scope_identity();
+2020-10-12 22:33:03.471 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionBE'.
+2020-10-12 22:33:03.471 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Agregar (GALAXY_NETCORE) in 1355.1695ms
+2020-10-12 22:33:03.472 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Agregar (GALAXY_NETCORE)'
+2020-10-12 22:33:03.472 -05:00 [INF] Request finished in 1355.7329ms 200 application/json; charset=utf-8
+2020-10-12 22:33:03.560 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=6  
+2020-10-12 22:33:03.561 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:33:03.561 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:33:03.561 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:33:03.561 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:33:03.727 -05:00 [INF] Executed DbCommand (166ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:33:03.894 -05:00 [INF] Executed DbCommand (167ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:33:03.894 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:33:03.895 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 333.9219ms
+2020-10-12 22:33:03.895 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:33:03.895 -05:00 [INF] Request finished in 334.716ms 200 application/json; charset=utf-8
+2020-10-12 22:33:42.650 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:33:42.651 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:33:42.651 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:33:42.651 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:33:42.651 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:33:42.845 -05:00 [INF] Executed DbCommand (194ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:33:43.037 -05:00 [INF] Executed DbCommand (183ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:33:43.037 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:33:43.038 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 386.5794ms
+2020-10-12 22:33:43.038 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:33:43.038 -05:00 [INF] Request finished in 387.815ms 200 application/json; charset=utf-8
+2020-10-12 22:34:31.588 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:34:31.589 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:34:31.589 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:34:31.589 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:34:31.589 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:34:31.766 -05:00 [INF] Executed DbCommand (176ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:34:31.951 -05:00 [INF] Executed DbCommand (185ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:34:31.951 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:34:31.951 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 362.468ms
+2020-10-12 22:34:31.951 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:34:31.952 -05:00 [INF] Request finished in 390.2057ms 200 application/json; charset=utf-8
+2020-10-12 22:34:32.105 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:34:32.105 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:34:32.105 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:34:32.105 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:34:32.105 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:34:32.276 -05:00 [INF] Executed DbCommand (171ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:34:32.455 -05:00 [INF] Executed DbCommand (175ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:34:32.455 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:34:32.455 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 350.3864ms
+2020-10-12 22:34:32.455 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:34:32.455 -05:00 [INF] Request finished in 350.8252ms 200 application/json; charset=utf-8
+2020-10-12 22:40:47.281 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=7  
+2020-10-12 22:40:47.281 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:40:47.281 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:40:47.282 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:40:47.282 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:40:48.520 -05:00 [INF] Executed DbCommand (207ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:40:48.700 -05:00 [INF] Executed DbCommand (180ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:40:48.701 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:40:48.701 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 1419.2156ms
+2020-10-12 22:40:48.701 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:40:48.701 -05:00 [INF] Request finished in 1419.7483ms 200 application/json; charset=utf-8
+2020-10-12 22:43:20.624 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=5&NroRegTotal=undefined  
+2020-10-12 22:43:20.632 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:43:20.632 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:43:20.633 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:43:20.633 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:43:20.820 -05:00 [INF] Executed DbCommand (186ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:43:21.008 -05:00 [INF] Executed DbCommand (188ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:43:21.008 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:43:21.008 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 375.6607ms
+2020-10-12 22:43:21.008 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:43:21.008 -05:00 [INF] Request finished in 407.6178ms 200 application/json; charset=utf-8
+2020-10-12 22:43:21.220 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=5&NroRegTotal=undefined  
+2020-10-12 22:43:21.220 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:43:21.220 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:43:21.220 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:43:21.220 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:43:21.423 -05:00 [INF] Executed DbCommand (200ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:43:21.663 -05:00 [INF] Executed DbCommand (239ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:43:21.663 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:43:21.663 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 443.187ms
+2020-10-12 22:43:21.663 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:43:21.664 -05:00 [INF] Request finished in 443.8197ms 200 application/json; charset=utf-8
+2020-10-12 22:46:25.365 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:46:25.368 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:46:25.368 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:46:25.368 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:46:25.368 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:46:25.571 -05:00 [INF] Executed DbCommand (203ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:46:25.764 -05:00 [INF] Executed DbCommand (187ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:46:25.764 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:46:25.764 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 396.1462ms
+2020-10-12 22:46:25.764 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:46:25.764 -05:00 [INF] Request finished in 423.744ms 200 application/json; charset=utf-8
+2020-10-12 22:46:25.999 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:46:25.999 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:46:25.999 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:46:25.999 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:46:26.000 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:46:26.559 -05:00 [INF] Executed DbCommand (559ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:46:26.771 -05:00 [INF] Executed DbCommand (212ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:46:26.774 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:46:26.774 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 774.7663ms
+2020-10-12 22:46:26.774 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:46:26.774 -05:00 [INF] Request finished in 775.2542ms 200 application/json; charset=utf-8
+2020-10-12 22:48:06.952 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:48:06.952 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:48:06.953 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:48:06.953 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:48:06.953 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:48:07.130 -05:00 [INF] Executed DbCommand (177ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:48:07.314 -05:00 [INF] Executed DbCommand (180ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:48:07.317 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:48:07.318 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 365.151ms
+2020-10-12 22:48:07.318 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:48:07.318 -05:00 [INF] Request finished in 365.6973ms 200 application/json; charset=utf-8
+2020-10-12 22:48:07.319 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:48:07.319 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:48:07.320 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:48:07.320 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:48:07.320 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:48:07.513 -05:00 [INF] Executed DbCommand (193ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:48:07.684 -05:00 [INF] Executed DbCommand (170ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:48:07.684 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:48:07.684 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 364.3834ms
+2020-10-12 22:48:07.684 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:48:07.684 -05:00 [INF] Request finished in 364.9413ms 200 application/json; charset=utf-8
+2020-10-12 22:48:14.680 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=7&NroRegTotal=7  
+2020-10-12 22:48:14.680 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:48:14.680 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:48:14.680 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:48:14.681 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:48:16.078 -05:00 [INF] Executed DbCommand (182ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:48:16.265 -05:00 [INF] Executed DbCommand (186ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:48:16.292 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:48:16.292 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 1611.6992ms
+2020-10-12 22:48:16.292 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:48:16.292 -05:00 [INF] Request finished in 1612.281ms 200 application/json; charset=utf-8
+2020-10-12 22:48:28.160 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:5001/api/Opcion  
+2020-10-12 22:48:28.160 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:48:28.160 -05:00 [INF] Request finished in 0.273ms 204 
+2020-10-12 22:48:28.161 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/Opcion application/json 64
+2020-10-12 22:48:28.161 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:48:28.161 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Agregar (GALAXY_NETCORE)'
+2020-10-12 22:48:28.161 -05:00 [INF] Route matched with {action = "Agregar", controller = "Opcion"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Agregar(GALAXY_NETCORE.Models.BE.OpcionBE) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:48:28.162 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:48:28.519 -05:00 [INF] Executed DbCommand (179ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[opcion] ([NombreIcono], [NombreOpcion], [UrlOpcion])
+VALUES (@p0, @p1, @p2);
+SELECT [IdOpcion]
+FROM [dbo].[opcion]
+WHERE @@ROWCOUNT = 1 AND [IdOpcion] = scope_identity();
+2020-10-12 22:48:28.697 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionBE'.
+2020-10-12 22:48:28.698 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Agregar (GALAXY_NETCORE) in 536.3679ms
+2020-10-12 22:48:28.698 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Agregar (GALAXY_NETCORE)'
+2020-10-12 22:48:28.698 -05:00 [INF] Request finished in 536.7987ms 200 application/json; charset=utf-8
+2020-10-12 22:48:28.794 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=7&NroRegTotal=7  
+2020-10-12 22:48:28.794 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:48:28.794 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:48:28.794 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:48:28.795 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:48:28.976 -05:00 [INF] Executed DbCommand (181ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:48:29.150 -05:00 [INF] Executed DbCommand (174ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:48:29.151 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:48:29.151 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 356.4643ms
+2020-10-12 22:48:29.151 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:48:29.151 -05:00 [INF] Request finished in 357.1405ms 200 application/json; charset=utf-8
+2020-10-12 22:48:31.983 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:48:31.983 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:48:31.983 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:48:31.983 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:48:31.983 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:48:32.164 -05:00 [INF] Executed DbCommand (181ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:48:32.340 -05:00 [INF] Executed DbCommand (175ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:48:32.340 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:48:32.340 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 357.3491ms
+2020-10-12 22:48:32.340 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:48:32.340 -05:00 [INF] Request finished in 357.8414ms 200 application/json; charset=utf-8
+2020-10-12 22:48:41.492 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:48:41.493 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:48:41.493 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:48:41.493 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:48:41.493 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:48:41.669 -05:00 [INF] Executed DbCommand (176ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:48:41.869 -05:00 [INF] Executed DbCommand (199ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:48:41.869 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:48:41.869 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 375.9425ms
+2020-10-12 22:48:41.869 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:48:41.869 -05:00 [INF] Request finished in 376.58ms 200 application/json; charset=utf-8
+2020-10-12 22:48:42.302 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=10&NroRegTotal=undefined  
+2020-10-12 22:48:42.302 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:48:42.302 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:48:42.302 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:48:42.303 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:48:42.481 -05:00 [INF] Executed DbCommand (178ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:48:42.655 -05:00 [INF] Executed DbCommand (174ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:48:42.655 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:48:42.656 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 353.3467ms
+2020-10-12 22:48:42.656 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:48:42.656 -05:00 [INF] Request finished in 353.7746ms 200 application/json; charset=utf-8
+2020-10-12 22:48:45.867 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=100&NroRegTotal=undefined  
+2020-10-12 22:48:45.867 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:48:45.867 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:48:45.868 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:48:45.868 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:48:46.043 -05:00 [INF] Executed DbCommand (174ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:48:46.239 -05:00 [INF] Executed DbCommand (196ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:48:46.240 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:48:46.240 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 372.3343ms
+2020-10-12 22:48:46.240 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:48:46.240 -05:00 [INF] Request finished in 373.1669ms 200 application/json; charset=utf-8
+2020-10-12 22:48:46.245 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=100&NroRegTotal=undefined  
+2020-10-12 22:48:46.245 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:48:46.245 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:48:46.246 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:48:46.246 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:48:46.439 -05:00 [INF] Executed DbCommand (193ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:48:46.615 -05:00 [INF] Executed DbCommand (176ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOpcion], [o].[NombreIcono], [o].[NombreOpcion], [o].[UrlOpcion]
+FROM [dbo].[opcion] AS [o]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2020-10-12 22:48:46.615 -05:00 [INF] Executing ObjectResult, writing value of type 'GALAXY_NETCORE.Models.BE.OpcionListar'.
+2020-10-12 22:48:46.616 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 370.1061ms
+2020-10-12 22:48:46.616 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:48:46.616 -05:00 [INF] Request finished in 370.9237ms 200 application/json; charset=utf-8
+2020-10-12 22:53:04.347 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Opcion?Filtro=&NroPag=0&RegPorPag=100&NroRegTotal=8  
+2020-10-12 22:53:04.397 -05:00 [INF] CORS policy execution successful.
+2020-10-12 22:53:04.397 -05:00 [INF] Executing endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:53:04.397 -05:00 [INF] Route matched with {action = "Listar", controller = "Opcion"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar(Int32, Int32, System.String) on controller GALAXY_NETCORE.Controllers.OpcionController (GALAXY_NETCORE).
+2020-10-12 22:53:04.397 -05:00 [INF] Entity Framework Core 3.1.8 initialized 'GalaxyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-12 22:53:04.641 -05:00 [ERR] Failed executing DbCommand (242ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [dbo].[opcion] AS [o]
+2020-10-12 22:53:04.708 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'GALAXY_NETCORE.Context.GalaxyContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 35 - An internal exception was caught)
+ ---> System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer.
+ ---> System.Net.Sockets.SocketException (54): Connection reset by peer
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:8bbed898-4528-4d04-bd3b-2a9e89ef7e0d
+Microsoft.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 35 - An internal exception was caught)
+ ---> System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer.
+ ---> System.Net.Sockets.SocketException (54): Connection reset by peer
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:8bbed898-4528-4d04-bd3b-2a9e89ef7e0d
+2020-10-12 22:53:05.268 -05:00 [INF] Executed action GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE) in 871.0397ms
+2020-10-12 22:53:05.268 -05:00 [INF] Executed endpoint 'GALAXY_NETCORE.Controllers.OpcionController.Listar (GALAXY_NETCORE)'
+2020-10-12 22:53:05.270 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 35 - An internal exception was caught)
+ ---> System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer.
+ ---> System.Net.Sockets.SocketException (54): Connection reset by peer
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at GALAXY_NETCORE.Services.OpcionServices.Listar(Paginacion ent) in /Users/msoto/Projects/dotnet/GALAXY_NETCORE/GALAXY_NETCORE/Services/OpcionServices.cs:line 64
+   at GALAXY_NETCORE.Manager.OpcionManager.Listar(Paginacion ent) in /Users/msoto/Projects/dotnet/GALAXY_NETCORE/GALAXY_NETCORE/Manager/OpcionManager.cs:line 76
+   at GALAXY_NETCORE.Controllers.OpcionController.Listar(Int32 NroPag, Int32 RegPorPag, String filtro) in /Users/msoto/Projects/dotnet/GALAXY_NETCORE/GALAXY_NETCORE/Controllers/OpcionController.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:8bbed898-4528-4d04-bd3b-2a9e89ef7e0d
+2020-10-12 22:53:05.293 -05:00 [INF] Request finished in 946.078ms 500 text/plain

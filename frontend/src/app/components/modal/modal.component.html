@@ -5,33 +5,42 @@
 <div mat-dialog-content>
     <form #opcionForm="ngForm" (ngSubmit)="agregarOactualizar(opcionForm)">
         <input type="hidden" name="codigo" [ngModel]="data.codigo">
-        <label for="nombre">Nombre</label>
-        <input 
-        type="text" 
-        id="nombre" 
-        name="nombre"
-        required
-        minlength="3"
-        [ngModel]="data.nombre">
-        <br>
-        <label for="enlace">Enlace</label>
-        <input 
-        type="text" 
-        id="enlace" 
-        name="enlace"
-        minlength="1"
-        [ngModel]="data.enlace">
-<br>
-
-        <label for="icono">Icono</label>
-        <input 
-        type="text" 
-        id="icono"
-         name="icono"
-         minlength="1"
-         [ngModel]="data.icono">
-         <br>
-         <button [disabled]="!opcionForm.valid" type="submit">Guardar</button>
+        <mat-form-field class="w-100">
+            <mat-label for="nombre">Nombre</mat-label>
+            <input 
+            matInput
+            type="text" 
+            id="nombre" 
+            name="nombre"
+            required
+            minlength="3"
+            [ngModel]="data.nombre">
+        </mat-form-field>
+        
+        <mat-form-field class="w-100">
+            <mat-label for="enlace">Enlace</mat-label>
+            <input 
+            matInput
+            type="text" 
+            id="enlace" 
+            name="enlace"
+            minlength="1"
+            [ngModel]="data.enlace">
+        </mat-form-field>
+        
+        <mat-form-field class="w-100">
+            <mat-label for="icono">Icono</mat-label>
+            <input 
+            matInput
+            type="text" 
+            id="icono"
+            name="icono"
+            minlength="1"
+            [ngModel]="data.icono">
+        </mat-form-field>
+        <p>
+            <button mat-flat-button color="accent" [disabled]="!opcionForm.valid" type="submit">Guardar</button>
+        </p>
 
     </form>
 </div>

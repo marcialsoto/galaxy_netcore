@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
   dataSource: MatTableDataSource<OpcionModel>;
   pag: PaginacionModel = {
     NroPag: 0,
-    RegPorPag: 10,
+    RegPorPag: 100,
     Filtro: ''
   };
 
@@ -39,6 +39,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.cargarOpciones(this.pag);
+    setTimeout(() => {
+      console.log(this.dataSource.data);
+    }, 1000);
   }
 
   cargarOpciones(paginacion: PaginacionModel) {
@@ -46,6 +49,7 @@ export class AppComponent implements OnInit {
     .subscribe( (res: any) => {
       // console.log(res);
         this.pag.NroRegTotal = res.totalReg;
+        // this.pag.RegPorPag = res.totalReg;
         this.opciones = res.opciones;
         this.dataSource = new MatTableDataSource<OpcionModel>(res.opciones);
         this.dataSource.paginator = this.paginator;
