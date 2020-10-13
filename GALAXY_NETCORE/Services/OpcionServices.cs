@@ -63,7 +63,7 @@ namespace GALAXY_NETCORE.Services
 
             ent.NroRegTotal = await query.CountAsync();
 
-            query = query.Skip(ent.NroPag * ent.RegPorPag).Take(ent.RegPorPag).AsNoTracking();
+            query = query.Skip(ent.NroPag * ent.RegPorPag).Take(ent.RegPorPag).AsNoTracking().OrderByDescending(a => a.IdOpcion);
             return await query.ToListAsync();
         }
     }
